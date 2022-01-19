@@ -19,3 +19,8 @@ Login & Register with email & password, Product Add to cart, Cart management, Lo
 ### For access dashboard login with this credentials:
 ### Email: obaydul@hoque.com
 ### Password: Please contact me to get password for admin account access
+### My Contact links:
+Email: obaydul82hoque@gmail.com
+Facebook: https://www.facebook.com/ObaydulHoqueTusher/
+Linkedin: https://www.linkedin.com/in/md-obaydul-hoque-6b89b917b/
+Mobile/whatsapp/telegram: +8801706651577
