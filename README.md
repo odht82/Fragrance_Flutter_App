@@ -1,16 +1,21 @@
-# fragrance_app
+# Fragrance-Shop.
 
-A new Flutter project.
+This project is for Purchasing Fragrances. Visit the Website: [Fragrance-Shop.](https://fragrance-shop-7672f.web.app/).
 
-## Getting Started
+## App Feature:
+Login & Register with email & password, Product Add to cart, Cart management, Logout etc.
 
-This project is a starting point for a Flutter application.
+## Technologies:
+### Flutter, Dart, GetX, Firebase, Firestore etc.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Website Front & Back Repo Link:
+[Fragrance-Shop website. client side Repo](https://github.com/odht82/niche-website-fragrances)
+[Fragrance-Shop website. Server Side Repo](https://github.com/odht82/server-side-fragrances)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Website Feature:
+### Dashboard, Login with google, Login & Register with email & password, Reveiws management, Admin management, Order management, product management etc.
+### For access dashboard login with this credentials:
+### Email: obaydul@hoque.com
+### Password: Please contact me to get password for admin account access
