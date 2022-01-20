@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fragrance_app/constants/controllers.dart';
+// ignore: unused_import
+import 'package:fragrance_app/models/cart_item.dart';
 import 'package:fragrance_app/models/product.dart';
 import 'package:fragrance_app/widgets/custom_text.dart';
 

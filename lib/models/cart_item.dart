@@ -13,9 +13,9 @@ class CartItemModel {
   String? image;
   String? name;
   int? quantity;
-  String? cost;
+  int? cost;
   String? productId;
-  String? price;
+  int? price;
 
   CartItemModel(
       {this.id,

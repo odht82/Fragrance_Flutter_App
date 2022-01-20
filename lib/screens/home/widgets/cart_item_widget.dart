@@ -37,14 +37,8 @@ class CartItemWidget extends StatelessWidget {
                 IconButton(
                     icon: const Icon(Icons.chevron_left),
                     onPressed: () {
-                      if (1 < cartItem!.quantity!.toInt()) {
-                        cartController.decreaseQuantity(cartItem!);
-                        Get.snackbar(
-                            "Quantity decreased", "${cartItem!.name!}");
-                      } else {
-                        cartController.decreaseQuantity(cartItem!);
-                        Get.snackbar("Product removed", "${cartItem!.name!}");
-                      }
+                      cartController.decreaseQuantity(cartItem!);
+                      Get.snackbar("Quantity decreased", "${cartItem!.name!}");
                     }),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -55,10 +49,8 @@ class CartItemWidget extends StatelessWidget {
                 IconButton(
                     icon: const Icon(Icons.chevron_right),
                     onPressed: () {
-                      if (1 < cartItem!.quantity!.toInt()) {
-                        cartController.increaseQuantity(cartItem!);
-                        Get.snackbar("Quantity increased", "");
-                      }
+                      cartController.increaseQuantity(cartItem!);
+                      Get.snackbar("Quantity increased", "${cartItem!.name!}");
                     }),
               ],
             )

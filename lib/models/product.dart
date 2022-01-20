@@ -11,7 +11,7 @@ class ProductModel {
   String? image;
   String? name;
   String? brand;
-  String? price;
+  int? price;
 
   ProductModel({this.id, this.image, this.name, this.brand, this.price});
 

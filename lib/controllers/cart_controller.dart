@@ -80,17 +80,39 @@ class CartController extends GetxController {
       removeCartItem(item);
     } else {
       removeCartItem(item);
-      item.quantity! - 1;
+      var newQuant = item.quantity! - 1;
       userController.updateUserData({
-        "cart": FieldValue.arrayUnion([item.toJson()])
+        "cart": FieldValue.arrayUnion([
+          {
+            "id": item.id,
+            "productId": item.productId,
+            "name": item.name,
+            "quantity": newQuant,
+            "price": item.price,
+            "image": item.image,
+            "cost": newQuant.toInt() * item.price!.toInt()
+          }
+        ])
       });
     }
   }
 
   void increaseQuantity(CartItemModel item) {
+    removeCartItem(item);
+    var newQuant = item.quantity! + 1;
     logger.i({"quantity": item.quantity});
     userController.updateUserData({
-      "cart": FieldValue.arrayUnion([item.toJson()])
+      "cart": FieldValue.arrayUnion([
+        {
+          "id": item.id,
+          "productId": item.productId,
+          "name": item.name,
+          "quantity": newQuant,
+          "price": item.price,
+          "image": item.image,
+          "cost": newQuant.toInt() * item.price!.toInt()
+        }
+      ])
     });
   }
 }

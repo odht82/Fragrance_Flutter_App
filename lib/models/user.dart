@@ -17,7 +17,7 @@ class UserModel {
   UserModel({this.id, this.name, this.email, this.cart});
 
   UserModel.fromSnapshot(DocumentSnapshot snapshot) {
-    id = snapshot.id;
+    id = snapshot[ID];
     email = snapshot[EMAIL];
     name = snapshot[NAME];
     cart = _convertCartItems(snapshot[CART] ?? []);
@@ -35,6 +35,3 @@ class UserModel {
 
   List cartItemsToJson() => cart!.map((item) => item.toJson()).toList();
 }
-
-
-// 13467928
