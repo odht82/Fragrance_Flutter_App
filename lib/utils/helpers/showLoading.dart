@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-showLoading() {
+showLoading(String loadingTitle) {
   Get.defaultDialog(
-      title: "Loading...",
+      title: loadingTitle,
       content: const CircularProgressIndicator(),
       barrierDismissible: true);
 }

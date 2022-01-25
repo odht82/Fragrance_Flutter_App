@@ -39,7 +39,7 @@ class UserController extends GetxController {
 
   void signIn() async {
     try {
-      showLoading();
+      showLoading('Wait logging in');
       await auth
           .signInWithEmailAndPassword(
               email: email.text.trim(), password: password.text.trim())
@@ -55,7 +55,7 @@ class UserController extends GetxController {
   }
 
   void signUp() async {
-    showLoading();
+    showLoading('Wait Registering');
     try {
       await auth
           .createUserWithEmailAndPassword(
